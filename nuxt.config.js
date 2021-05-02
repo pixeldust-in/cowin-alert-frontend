@@ -49,9 +49,13 @@ export default {
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
+    icon: {
+      fileName: 'app-icon.png',
+    },
     manifest: {
-      lang: 'en'
-    }
+      name: 'Cowin Alerts',
+      lang: 'en',
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
