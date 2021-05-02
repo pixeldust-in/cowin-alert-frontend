@@ -1,31 +1,5 @@
 <template>
   <div>
-    <div
-      class="flex justify-between md:flex-row flex-col p-8 rounded-lg process-wrapper text-xs"
-    >
-      <div class="flex">
-        <img src="@/assets/images/realtime-updates.svg" class="flex-shrink-0" />
-        <span class="pl-5"
-          >Get <b>realtime updates</b> on<br />
-          vaccine availability</span
-        >
-      </div>
-      <div class="flex mt-4 md:mt-0">
-        <img src="@/assets/images/unsubscribe.svg" class="flex-shrink-0" />
-        <span class="pl-5">
-          <strong> Unsubscribe </strong> from alerts <br />
-          anytime
-        </span>
-      </div>
-
-      <div class="flex mt-4 md:mt-0">
-        <img src="@/assets/images/data-erased.svg" class="flex-shrink-0" />
-        <span class="pl-5">
-          Your <strong> data is erased </strong> once <br />
-          you unsuscribe
-        </span>
-      </div>
-    </div>
     <div class="mt-7 mb-6 text-2xl font-bold">Register for Alerts</div>
 
     <form action="" method="post">
@@ -39,8 +13,8 @@
       </div>
       <div class="w-full mb-4">
         <input
-          type="text"
-          maxlength="4"
+          type="tel"
+          maxlength="6"
           required
           placeholder="Enter your pincode"
           class="w-full rounded-lg px-4 border border-gray py-3 outline-none focus:border-purple transition duration-500 ease-in-out text-sm bg-white"
@@ -74,7 +48,7 @@
       </div>
       <div class="">
         <span
-          class="w-full px-6 py-3 text-white font-medium flex justify-center outline-none items-center bg-purple rounded-full"
+          class="w-full px-6 py-3 text-white font-medium flex justify-center outline-none items-center bg-purple rounded-full cursor-pointer"
           @click="$emit('next')"
         >
           Submit
@@ -126,14 +100,5 @@ export default {
   background: rgb(240, 251, 252);
   background: linear-gradient(180deg, #f4feff, #d1f4ff);
 }
-.check {
-  img {
-    display: none;
-  }
-  &.selected {
-    img {
-      display: block;
-    }
-  }
-}
+
 </style>

@@ -11,7 +11,12 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'Get realtime email alerts for vaccine availability on your pincode' },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Get realtime email alerts for vaccine availability on your pincode',
+      },
     ],
     link: [
       {href: "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap", rel: "stylesheet"}, 

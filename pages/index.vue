@@ -1,105 +1,88 @@
 <template>
   <div>
-    <Header />
-    <div class="flex md:flex-row items-center flex-col">
-      <div
-        class="md:w-407 w-full p-8 bg-blue flex justify-center items-center rounded-xl"
-      >
-        <img src="@/assets/images/vaccine-welcome.svg" />
-      </div>
-      <div class="flex-1 md:mx-24 md:pr-52">
-        <div class="md:text-4xl font-bold">
-          Get notified when the vaccine is available near you.
-        </div>
-        <div class="text-xl my-8">
-          Get an email alert as soon as new vaccination slots are updated on
-          CoWin.
-        </div>
-        <div class="md:w-235 w-full">
-          <Button>Register for Alerts</Button>
-        </div>
-      </div>
-      <div class="md:w-310 w-full md:ml-24">
-        <div class="md:text-4xl font-bold">Register for Alerts</div>
-        <div class="mt-8 mb-4">
-          <div class="mb-2">
-            <Text-input />
+    <div class="desktop-view">
+      <Header />
+      <div v-show="stage === 0 || stage === 1">
+        <div class="flex md:flex-row items-center flex-col">
+          <div
+            class="md:w-407 w-full p-8 bg-blue flex justify-center items-center rounded-xl"
+          >
+            <img src="@/assets/images/vaccine-welcome.svg" />
           </div>
-          <div>
-            <Text-input />
-          </div>
-          <div class="pl-3 uppercase text-sm">Select your age bracket:</div>
-          <div class="flex justify-between mt-4 -mx-2">
-            <div
-              class="bg-purple border-2 flex flex-1 py-2 px-3 justify-between border-purple text-white mx-2 rounded-lg"
-            >
-              Yes
-              <img src="@/assets/images/checked.svg" class="flex-shrink-0 ml-2" />
+          <div v-show="stage === 0" class="flex-1 md:mx-24 md:pr-52">
+            <div class="md:text-4xl font-bold">
+              Get notified when the vaccine is available near you.
             </div>
-            <div
-              class="text-black-1 flex border-gray border-2 justify-between flex-1 py-2 px-3 mx-2 rounded-lg"
-            >
-              No
+            <div class="text-xl my-8">
+              Get an email alert as soon as new vaccination slots are updated on
+              CoWin.
+            </div>
+            <div class="md:w-235 w-full">
+              <span
+                class="w-full px-6 py-3 text-white font-medium flex justify-center outline-none items-center bg-purple rounded-full cursor-pointer"
+                @click="stage = 1"
+                >Register for Alerts</span
+              >
             </div>
           </div>
-          <div class="form-group mt-6">
-            <input type="checkbox" id="css" />
-            <label for="css"
-              >I agree to receive email/SMS/calls/online communications from P&G
-              Brands directly or through their 3rd Party vendors on product
-              sampling & marketing promotions. Click to read P&G Privacy
-              Policy.</label
-            >
+          <div v-if="stage === 1" class="md:w-4/12 w-full md:ml-24">
+            <FormMobile @next="stage = 2" />
           </div>
         </div>
-        <div class="w-235">
-          <Button>Register for Alerts</Button>
-        </div>
+        <ProcessFlow />
       </div>
+      <SuccessMobile v-if="stage === 2" class="mx-auto" />
     </div>
-    <div
-      class="flex justify-between md:flex-row flex-col p-8 border rounded-lg mt-10"
-    >
-      <div class="flex mt-6 md:mt-0">
-        <img src="@/assets/images/unsubscribe.svg" class="flex-shrink-0" />
-        <span class="pl-5"
-          >Get <b>realtime updates</b> on<br />
-          vaccine availability</span
-        >
+    <div class="mobile-view">
+      <Header />
+      <LandingMobile v-if="stage === 0" @next="stage = 1" />
+      <div v-if="stage === 1">
+        <ProcessFlow />
+
+        <FormMobile @next="stage = 2" />
       </div>
-      <div class="flex mt-6 md:mt-0">
-        <img src="@/assets/images/realtime-updates.svg" class="flex-shrink-0" />
-        <span class="pl-5"
-          >Get <b>realtime updates</b> on<br />
-          vaccine availability</span
-        >
-      </div>
-      <div class="flex mt-6 md:mt-0">
-        <img src="@/assets/images/data-erased.svg" class="flex-shrink-0" />
-        <span class="pl-5"
-          >Get <b>realtime updates</b> on<br />
-          vaccine availability</span
-        >
-      </div>
-    </div>
-   <SuccessMobile />
-    <div class="w-full md:w-536 mx-auto mt-8 flex justify-between md:flex-row flex-col space-y-4 md:space-y-0">
-      <span
-        class="bg-purple md:pr-4 text-white flex-1 flex items-center justify-center py-3 font-medium border border-purple rounded-full text-center"
-        >Share this link</span
-      >
-      <span
-        class="text-purple flex-1 flex items-center justify-center py-3 font-medium border border-purple rounded-full text-center"
-        >Unsubscribe</span
-      >
+      <SuccessMobile v-if="stage === 2" />
     </div>
   </div>
 </template>
 
 <script>
-import TextInput from '~/components/TextInput.vue'
 export default {
-  components: { TextInput },
+  components: {},
+  header() {
+    const title = 'Cowin Alerts By Pixeldust'
+    const description =
+      'Get realtime email alerts for vaccine availability on your pincode'
+    const site_name = 'cowin-alerts.pixeldust.in'
+    return {
+      title,
+      meta: [
+        { hid: 'description', name: 'description', content: description },
+        { hid: 'og:title', property: 'og:title', content: title },
+        { hid: 'og:site_name', property: 'og:site_name', content: site_name },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: description,
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        {
+          name: 'twitter:title',
+          content: title,
+        },
+        {
+          name: 'twitter:description',
+          content: description,
+        },
+      ],
+    }
+  },
+  data: () => ({
+    stage: 0,
+  }),
 }
 </script>
 
@@ -151,5 +134,22 @@ export default {
   border: solid #4255fe;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
+}
+
+@media screen and (max-width: 499px) {
+  .mobile-view {
+    display: block;
+  }
+  .desktop-view {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) {
+  .mobile-view {
+    display: none;
+  }
+  .desktop-view {
+    display: block;
+  }
 }
 </style>
