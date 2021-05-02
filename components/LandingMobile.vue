@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="md:w-407 w-full p-8 bg-blue flex justify-center items-center rounded-xl"
+      class="w-full p-8 bg-blue flex justify-center items-center rounded-xl"
     >
       <img src="@/assets/images/vaccine-welcome.svg" />
     </div>

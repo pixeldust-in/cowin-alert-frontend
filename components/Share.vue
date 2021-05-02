@@ -2,12 +2,14 @@
   <!-- AddToAny BEGIN -->
   <div
     class="a2a_kit a2a_kit_size_32 a2a_default_style a2a_vertical_style add-to-any-widget"
+    style="max-width: 260px;"
   >
     <a class="a2a_button_facebook" v-if="options.includes('facebook')"></a>
     <a class="a2a_button_twitter" v-if="options.includes('twitter')"></a>
     <a class="a2a_button_linkedin" v-if="options.includes('linkedin')"></a>
     <a class="a2a_button_whatsapp" v-if="options.includes('whatsapp')"></a>
     <a class="a2a_button_email" v-if="options.includes('email')"></a>
+    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
   </div>
   <!-- AddToAny END -->
 </template>

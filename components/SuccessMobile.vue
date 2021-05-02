@@ -11,7 +11,7 @@
       </div>
 </div>
       <div class="flex items-center mt-8">
-<span class="mr-2 font-bold">          Share: </span>
+<span class="mr-2 font-bold">          Share : </span>
       <Share />
 
           </div>
