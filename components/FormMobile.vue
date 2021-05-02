@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="mt-7 mb-6 text-2xl font-bold">Register for Alerts</div>
+    <div class="mt-7 md:mt-0 mb-6 text-2xl font-bold">Register for Alerts</div>
 
     <form action="" method="post">
       <div class="w-full mb-4">

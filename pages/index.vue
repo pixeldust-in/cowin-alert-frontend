@@ -3,14 +3,14 @@
     <div class="desktop-view">
       <Header />
       <div v-show="stage === 0 || stage === 1">
-        <div class="flex md:flex-row items-center flex-col">
+        <div class="flex md:flex-row items-start flex-col">
           <div
             class="md:w-407 w-full p-8 bg-blue flex justify-center items-center rounded-xl"
           >
             <img src="@/assets/images/vaccine-welcome.svg" />
           </div>
           <div v-show="stage === 0" class="flex-1 md:mx-24 md:pr-52">
-            <div class="md:text-4xl font-bold">
+            <div class="md:text-4xl font-bold mt-10">
               Get notified when the vaccine is available near you.
             </div>
             <div class="text-xl my-8">
