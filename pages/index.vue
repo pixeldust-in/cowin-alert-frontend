@@ -7,7 +7,18 @@
       >
         <img src="@/assets/images/vaccine-welcome.svg" />
       </div>
-     
+      <div class="flex-1 md:mx-24 md:pr-52">
+        <div class="md:text-4xl font-bold">
+          Get notified when the vaccine is available near you.
+        </div>
+        <div class="text-xl my-8">
+          Get an email alert as soon as new vaccination slots are updated on
+          CoWin.
+        </div>
+        <div class="md:w-235 w-full">
+          <Button>Register for Alerts</Button>
+        </div>
+      </div>
       <div class="md:w-310 w-full md:ml-24">
         <div class="md:text-4xl font-bold">Register for Alerts</div>
         <div class="mt-8 mb-4">
