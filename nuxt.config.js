@@ -11,11 +11,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0' },
-      { hid: 'description', name: 'description', content: 'Get realtime email alerts for vaccine availability on your pincode' },
+      { hid: 'description', name: 'description', content: 'Get realtime email alerts for vaccine availability for 18-45 age group in your pincode.' },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'Get realtime email alerts for vaccine availability on your pincode',
+        content: 'Get realtime email alerts for vaccine availability for 18-45 age group in your pincode.',
       },
     ],
     link: [
@@ -39,6 +39,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/date-fns',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

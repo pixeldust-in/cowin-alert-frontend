@@ -21,8 +21,8 @@
       <div class="flex md:w-1/3 mt-4 md:mt-0">
         <img src="@/assets/images/data-erased.svg" class="flex-shrink-0" />
         <span class="pl-5">
-          Your <strong> data is erased </strong> once <br />
-          you unsubscribe
+          Your <strong> data is erased </strong> when  <br />
+           you unsubscribe
         </span>
       </div>
     </div>

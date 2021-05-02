@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="desktop-view">
-      <Header />
+      <Header :class="{ 'flex justify-center': stage === 2 }" />
       <div v-show="stage === 0 || stage === 1">
         <div class="flex md:flex-row items-start flex-col">
           <div
@@ -9,13 +9,13 @@
           >
             <img src="@/assets/images/vaccine-welcome.svg" />
           </div>
-          <div v-show="stage === 0" class="flex-1 md:mx-24 md:pr-52">
+          <div v-show="stage === 0" class="flex-1 md:mx-24 md:pr-40">
             <div class="md:text-4xl font-bold mt-10">
-              Get notified when the vaccine is available near you.
+              Get vaccine availability alert near you!
             </div>
             <div class="text-xl my-8">
-              Get an email alert as soon as new vaccination slots are updated on
-              CoWin.
+              Get realtime email alerts for vaccine availability for
+              <strong> 18-45 </strong>age group in your pincode.
             </div>
             <div class="md:w-235 w-full">
               <span
@@ -43,6 +43,15 @@
       </div>
       <SuccessMobile v-if="stage === 2" />
     </div>
+
+    <div class="text-sm flex items-center justify-center mt-20">
+      for social cause by
+      <a href="https://pixeldust.in" target="_blank" class="text-purple ml-1"
+        >Pixeldust Technologies</a
+      >
+      <span class="mx-1">|</span>
+      connect with us at  <a href="mailto:cowin-alerts@pixeldust.in" class="text-purple ml-1"> cowin-alerts@pixeldust.in</a>
+    </div>
   </div>
 </template>
 
@@ -52,7 +61,7 @@ export default {
   header() {
     const title = 'Cowin Alerts By Pixeldust'
     const description =
-      'Get realtime email alerts for vaccine availability on your pincode'
+      'Get realtime email alerts for vaccine availability for 18-45 age group in your pincode.'
     const site_name = 'cowin-alerts.pixeldust.in'
     return {
       title,
