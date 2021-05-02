@@ -24,9 +24,9 @@
         <div class="uppercase text-xs mb-2 tracking-wide font-medium">
           Receive notifications for the next:
         </div>
-        <div class="border border-gray mt-1 rounded-lg p-3">
+        <div class="select-container relative border border-gray rounded-md block">
           <select
-            class="block w-full text-sm focus:outline-none bg-white focus:bg-white focus:ring-0"
+            class="w-full px-4 py-3 text-sm rounded-xl :focus:outline-none outline-none"
             name=""
             id=""
           >
@@ -102,4 +102,24 @@ export default {
   background: rgb(240, 251, 252);
   background: linear-gradient(180deg, #f4feff, #d1f4ff);
 }
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: none;
+}
+.select-container:after {content:""; width:0; height:0; position:absolute; pointer-events: none;}
+.select-container:after {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: 20px;
+    right: .75em;
+    border-top: 8px solid black;
+    opacity: 0.5;
+}
+select::-ms-expand {
+    display: none;
+}
+
 </style>
