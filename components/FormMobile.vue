@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="my-8 flex items-start">
-        <input type="checkbox" id="terms" class="mr-2 w-10" />
+        <input type="checkbox" id="terms" class="mr-2 w-8" />
         <label for="terms" class="text-xs"
           >I give my consent to cowin alerts to send me communication upon
           availability of covid-19 vaccine slots on cowin platform.</label
