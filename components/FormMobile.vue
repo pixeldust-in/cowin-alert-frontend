@@ -76,19 +76,19 @@ export default {
         value: null,
       },
       {
-        label: 'Next 7 days',
+        label: '7 days',
         value: 'week',
       },
       {
-        label: 'Next 15 days',
+        label: '15 days',
         value: 'twoweek',
       },
       {
-        label: 'Next 1 month',
+        label: '1 month',
         value: 'month',
       },
       {
-        label: 'Next 3 months',
+        label: '3 months',
         value: '3month',
       },
     ],
