@@ -21,10 +21,10 @@
         />
       </div>
       <div class="mt-1">
-        <div class="uppercase text-xs tracking-wide font-medium">
+        <div class="uppercase text-xs mb-2 tracking-wide font-medium">
           Recieve notification untill:
         </div>
-        <div class="border border-gray mt-1 rounded-md p-3">
+        <div class="border border-gray mt-1 rounded-lg p-3">
           <select
             class="block w-full text-sm focus:outline-none focus:bg-white focus:ring-0"
             name=""
@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="my-8 flex items-start">
-        <input type="checkbox" id="terms" class="mr-2 w-8" />
+        <input type="checkbox" id="terms" class="mr-2 w-8 h-8 -mt-1" />
         <label for="terms" class="text-xs"
           >I give my consent to cowin alerts to send me communication upon
           availability of covid-19 vaccine slots on cowin platform.</label
