@@ -22,7 +22,7 @@
       </div>
       <div class="mt-1">
         <div class="uppercase text-xs mb-2 tracking-wide font-medium">
-          Recieve notification untill:
+          Receive notifications for the next:
         </div>
         <div class="border border-gray mt-1 rounded-lg p-3">
           <select
