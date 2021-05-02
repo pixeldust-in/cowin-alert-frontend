@@ -7,18 +7,7 @@
       >
         <img src="@/assets/images/vaccine-welcome.svg" />
       </div>
-      <!-- <div class="flex-1 md:mx-24 md:pr-52">
-        <div class="md:text-4xl font-bold">
-          Get notified when the vaccine is available near you.
-        </div>
-        <div class="text-xl my-8">
-          Get an email alert as soon as new vaccination slots are updated on
-          CoWin.
-        </div>
-        <div class="md:w-235 w-full">
-          <Button>Register for Alerts</Button>
-        </div>
-      </div> -->
+     
       <div class="md:w-310 w-full md:ml-24">
         <div class="md:text-4xl font-bold">Register for Alerts</div>
         <div class="mt-8 mb-4">
@@ -82,16 +71,7 @@
         >
       </div>
     </div>
-    <div class="md:w-536 mx-auto w-full pt-14 px-8 bg-purple rounded-xl">
-      <div class="text-white text-2xl font-bold">Registered Successfully!</div>
-      <div class="text-white mt-5">
-        We're in this together. Let's get<br />
-        vaccinated at the earliest!
-      </div>
-      <div class="mt-10 flex justify-center">
-        <img src="@/assets/images/success-message.svg" />
-      </div>
-    </div>
+   <SuccessMobile />
     <div class="w-full md:w-536 mx-auto mt-8 flex justify-between md:flex-row flex-col space-y-4 md:space-y-0">
       <span
         class="bg-purple md:pr-4 text-white flex-1 flex items-center justify-center py-3 font-medium border border-purple rounded-full text-center"

@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-4 md:px-6 mx-auto">
+  <div id="app" class="container px-4 md:px-6 mx-auto">
     <Nuxt />
   </div>
 </template>
@@ -8,5 +8,6 @@
 body{
   color: #161922;
 }
+
 
 </style>

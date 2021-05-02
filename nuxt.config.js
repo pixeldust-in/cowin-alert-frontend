@@ -7,13 +7,14 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'cowin-alert-frontend',
+    title: 'Cowin Alerts By Pixeldust',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
+      {href: "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap", rel: "stylesheet"}, 
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
