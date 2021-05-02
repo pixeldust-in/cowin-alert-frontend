@@ -48,7 +48,7 @@
           availability of covid-19 vaccine slots on cowin platform.</label
         >
       </div>
-      <div class="">
+      <div class="mb-6">
         <span
           class="w-full px-6 py-3 text-white font-medium flex justify-center outline-none items-center bg-purple rounded-full cursor-pointer"
           @click="$emit('next')"
