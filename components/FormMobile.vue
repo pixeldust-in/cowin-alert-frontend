@@ -26,7 +26,7 @@
         </div>
         <div class="border border-gray mt-1 rounded-lg p-3">
           <select
-            class="block w-full text-sm focus:outline-none focus:bg-white focus:ring-0"
+            class="block w-full text-sm focus:outline-none bg-white focus:bg-white focus:ring-0"
             name=""
             id=""
           >
