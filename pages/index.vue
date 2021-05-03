@@ -11,7 +11,7 @@
           </div>
           <div v-show="stage === 0" class="flex-1 md:mx-24 md:pr-40">
             <div class="md:text-4xl font-bold mt-10">
-              Get vaccine availability alert near you!
+              Get notified when the vaccine is available near you.
             </div>
             <div class="text-xl my-8">
               Get realtime email alerts for vaccine availability for

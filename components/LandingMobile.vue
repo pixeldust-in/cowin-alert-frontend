@@ -7,7 +7,7 @@
     </div>
     <div class="my-6">
       <div class="text-2xl font-bold mb-6">
-        Get vaccine availability alert near you!
+        Get notified when the vaccine is available near you.
       </div>
       <div class="text-sm mb-6">
         Get realtime email alerts for vaccine availability for 18-45 age group in your pincode.
