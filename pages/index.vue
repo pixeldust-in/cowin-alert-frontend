@@ -56,6 +56,9 @@
       connect with us at  <a href="mailto:cowin-alerts@pixeldust.in" class="text-purple ml-1"> cowin-alerts@pixeldust.in</a>
       </div>
     </div>
+    <div class="text-xs pb-8 text-center md:px-40">
+       Pixeldust Technologies Pvt. Ltd. treats all user data with utmost care and only uses it for sending notifications to the user for the purpose indicated. User data is deleted after the completion of the duration specified in the 'number of days' alerts opted for by the user, or when the user unsubscribe, whichever is earlier.
+    </div>
   </div>
 </template>
 
