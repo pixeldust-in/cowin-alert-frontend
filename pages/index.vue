@@ -44,15 +44,15 @@
       <SuccessMobile v-if="stage === 2" />
     </div>
 
-    <div class="text-sm  md:flex-row flex-col items-center justify-center md:mt-20 py-8  md:flex hidden">
+    <div class="text-xs md:text-sm md:flex-row flex-col items-center justify-center md:mt-20 py-8  md:flex ">
       <div class="text-center">
-      developed by team
+      Developed by team
       <a href="https://pixeldust.in" target="_blank" class="text-purple ml-1"
         >Pixeldust Technologies</a
       >
       </div>
       <span class="mx-1 md:block hidden">|</span>
-      <div>
+      <div class="md:text-left text-center">
       connect with us at  <a href="mailto:cowin-alerts@pixeldust.in" class="text-purple ml-1"> cowin-alerts@pixeldust.in</a>
       </div>
     </div>
