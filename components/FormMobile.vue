@@ -57,7 +57,7 @@
         />
         <label for="terms" class="text-xs">
           I agree to receive email communications from Pixeldust Technologies
-          upon availability of covid-19 vaccine slots on cowin platform.</label
+          upon availability of covid-19 vaccine slots on cowin platform as per <nuxt-link  to="/terms/" class="text-blue" > Terms & Conditions </nuxt-link> </label
         >
       </div>
 
