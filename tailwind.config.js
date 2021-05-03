@@ -16,6 +16,9 @@ module.exports = {
       'sans': ['Montserrat', 'sans-serif'],
     },
     extend: {
+      fontSize: {
+        xxs: '8px'
+      },
       colors :{
         purple: "#4255FE",
         blue: "#42B8FE",
