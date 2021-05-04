@@ -13,7 +13,7 @@
           title="Please enter a valid email"
         />
         <div class="text-xs opacity-60 mt-1">
-          Only essential alerts, no spamming!
+         You can register for multiple pincodes with same email!
         </div>
       </div>
       <div class="w-full mb-5">
