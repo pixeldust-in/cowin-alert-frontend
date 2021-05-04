@@ -10,10 +10,13 @@
             <img src="@/assets/images/vaccine-welcome.svg" />
           </div>
           <div v-show="stage === 0" class="flex-1 md:mx-24 md:pr-40">
-            <div class="md:text-4xl font-bold mt-10">
-              Get notified when the vaccine is available near you.
-            </div>
-            <div class="text-xl my-8">
+           <div class="p-4 mb-6 bg-red-300 rounded">
+        Due to high demand & COWIN Open API restrictions, we are not accepting new registrations!
+        <br>
+        <br>
+        Thank you for your support!
+      </div>
+            <!-- <div class="text-xl my-8">
               Get realtime email alerts for vaccine availability for
               <strong> 18-45 </strong>age group in your pincode.
             </div>
@@ -23,13 +26,13 @@
                 @click="stage = 1"
                 >Register for Alerts</span
               >
-            </div>
+            </div> -->
           </div>
           <div v-if="stage === 1" class="md:w-4/12 w-full md:ml-24">
             <FormMobile @next="stage = 2" />
           </div>
         </div>
-        <ProcessFlow />
+        <!-- <ProcessFlow /> -->
       </div>
       <SuccessMobile v-if="stage === 2" class="mx-auto" />
     </div>
@@ -44,7 +47,7 @@
       <SuccessMobile v-if="stage === 2" />
     </div>
 
-    <div class="text-xs md:text-sm md:flex-row flex-col items-center justify-center md:mt-20 py-8  md:flex ">
+    <!-- <div class="text-xs md:text-sm md:flex-row flex-col items-center justify-center md:mt-20 py-8  md:flex ">
       <div class="text-center">
       Developed by team
       <a href="https://pixeldust.in" target="_blank" class="text-purple ml-1"
@@ -58,7 +61,7 @@
     </div>
     <div class="md:text-xs pb-8 text-xxs text-center md:px-40">
        Pixeldust Technologies Pvt. Ltd. treats all user data with utmost care and only uses it for sending notifications to the user for the purpose indicated. User data is deleted after the completion of the duration specified in the 'number of days' alerts opted for by the user, or when the user unsubscribe, whichever is earlier.
-    </div>
+    </div> -->
   </div>
 </template>
 
