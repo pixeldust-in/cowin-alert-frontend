@@ -11,18 +11,10 @@
           </div>
           <div v-show="stage === 0" class="flex-1 md:mx-24 md:pr-40">
             <div class="md:text-4xl font-bold mt-10">
-              Get notified when the vaccine is available near you.
+              The registrations are closed for this application now!
             </div>
             <div class="text-xl my-8">
-              Get realtime email alerts for vaccine availability for
-              <strong> 18-45 </strong>age group in your pincode.
-            </div>
-            <div class="md:w-235 w-full">
-              <span
-                class="w-full px-6 py-3 text-white font-medium flex justify-center outline-none items-center bg-purple rounded-full cursor-pointer"
-                @click="stage = 1"
-                >Register for Alerts</span
-              >
+              Visit <a href="https://selfregistration.cowin.gov.in/"> https://selfregistration.cowin.gov.in/</a> for registrations
             </div>
           </div>
           <div v-if="stage === 1" class="md:w-4/12 w-full md:ml-24">
